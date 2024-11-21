@@ -1,9 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "dev": "slidev slides/example.md --open",
-    "dev:layouts": "slidev slides/layouts.md --open",
-    "build": "deno run --allow-read --allow-write build.ts"
+    "mocha": "slidev --open --theme 'generated/slidev-theme-catppuccin-mocha'",
+    "latte": "slidev --open --theme 'generated/slidev-theme-catppuccin-latte'",
+    "frappe": "slidev --open --theme 'generated/slidev-theme-catppuccin-frappe'",
+    "macchiato": "slidev --open --theme 'generated/slidev-theme-catppuccin-macchiato'",
+    "generate": "deno run --allow-read --allow-write --allow-run  build.ts"
   },
   "devDependencies": {
     "@catppuccin/palette": "^1.7.1",

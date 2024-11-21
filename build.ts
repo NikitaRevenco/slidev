@@ -68,4 +68,11 @@ Object.entries(flavors).forEach(async ([flavor, theme]) => {
       await generateFile(templateDirectoryChild.name, flavor, theme);
     }
   }
+
+  await new Deno.run({
+    cmd: ["pnpm", "install"],
+    cwd: `./generated/slidev-theme-catppuccin-${flavor}`,
+    stdout: "piped",
+    stderr: "piped",
+  }).output();
 });

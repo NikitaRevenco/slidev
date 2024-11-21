@@ -1,6 +1,6 @@
 {
   "name": "slidev-theme-catppuccin-###flavor###",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "description": "Catppuccin ###flavor###, a soothing pastel theme for Slidev",
   "author": "Catppuccin <https://github.com/catppuccin/catppuccin>",
   "funding": "https://opencollective.com/catppuccin",
@@ -24,40 +24,18 @@
     "node": ">=14.0.0",
     "slidev": ">=0.19.3"
   },
-  "scripts": {
-    "build": "slidev build slides/example.md",
-    "gen:demos": "tsx scripts/build.ts",
-    "dev": "slidev slides/example.md --open",
-    "dev:layouts": "slidev slides/layouts.md --open",
-    "export": "slidev export slides/example.md",
-    "screenshot": "slidev export slides/example.md --format png",
-    "release": "bumpp package.json"
-  },
   "dependencies": {
     "codemirror-theme-vars": "^0.1.2",
-    "prism-theme-vars": "^0.2.5",
-    "theme-vitesse": "^0.7.9"
+    "prism-theme-vars": "^0.2.5"
   },
   "devDependencies": {
-    "@iconify-json/iconoir": "^1.2.4",
-    "@iconify-json/logos": "^1.2.3",
-    "@slidev/types": "0.50.0-beta.7",
-    "@slidev/cli": "0.50.0-beta.7",
-    "@types/node": "^20.17.6",
-    "bumpp": "^9.8.1",
-    "globby": "^13.2.2",
-    "serve": "^14.2.4",
-    "tsx": "^3.14.0"
+    "@slidev/types": "0.50.0-beta.7"
   },
   "//": "Learn more: https://sli.dev/themes/write-a-theme.html",
   "slidev": {
     "colorSchema": "###theme-type###",
     "highlighter": "shiki",
     "defaults": {
-      "fonts": {
-        "sans": "Nunito Sans",
-        "mono": "JetBrains Mono"
-      },
       "hightlighter": "shiki"
     }
   }
