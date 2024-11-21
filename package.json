@@ -5,12 +5,7 @@
     "dev:latte": "slidev --open test/latte.md",
     "dev:frappe": "slidev --open test/frappe.md",
     "dev:macchiato": "slidev --open test/macchiato.md",
-    "build": "deno run --allow-read --allow-write --allow-run  build.ts",
-    "generate-preview:mocha": "slidev export test/mocha.md --format png --output preview/mocha.png",
-    "generate-preview:frappe": "slidev export test/frappe.md --format png --output preview/frappe.png",
-    "generate-preview:latte": "slidev export test/latte.md --format png --output preview/latte.png",
-    "generate-preview:macchiato": "slidev export test/macchiato.md --format png --output preview/macchiato.png",
-    "generate-preview": "pnpm generate-preview:mocha && pnpm generate-preview:latte && pnpm generate-preview:frappe && pnpm generate-preview:macchiato"
+    "build": "deno run --allow-read --allow-write --allow-run build.ts"
   },
   "devDependencies": {
     "@catppuccin/palette": "^1.7.1",
