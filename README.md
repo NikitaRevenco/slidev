@@ -44,17 +44,23 @@ theme: catppuccin-mocha
 ---
 ```
 
+or
+
 ```md
 ---
 theme: catppuccin-macchiato
 ---
 ```
 
+or
+
 ```md
 ---
 theme: catppuccin-frappe
 ---
 ```
+
+or
 
 ```md
 ---
