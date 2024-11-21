@@ -1,12 +1,16 @@
 {
   "private": true,
   "scripts": {
-    "mocha": "slidev --open --theme 'generated/slidev-theme-catppuccin-mocha'",
-    "latte": "slidev --open --theme 'generated/slidev-theme-catppuccin-latte'",
-    "frappe": "slidev --open --theme 'generated/slidev-theme-catppuccin-frappe'",
-    "macchiato": "slidev --open --theme 'generated/slidev-theme-catppuccin-macchiato'",
-    "generate": "deno run --allow-read --allow-write --allow-run  build.ts",
-    "screenshot": "slidev export --theme 'generated/slidev-theme-catppuccin-mocha' --format png --output preview/mocha.png && slidev export --theme 'generated/slidev-theme-catppuccin-macchiato' --format png --output preview/macchiato.png && slidev export --theme 'generated/slidev-theme-catppuccin-frappe' --format png --output preview/frappe.png && slidev export --theme 'generated/slidev-theme-catppuccin-latte' --format png --output preview/latte.png"
+    "dev:mocha": "slidev --open test/mocha.md",
+    "dev:latte": "slidev --open test/latte.md",
+    "dev:frappe": "slidev --open test/frappe.md",
+    "dev:macchiato": "slidev --open test/macchiato.md",
+    "build": "deno run --allow-read --allow-write --allow-run  build.ts",
+    "generate-preview:mocha": "slidev export test/mocha.md --format png --output preview/mocha.png",
+    "generate-preview:frappe": "slidev export test/frappe.md --format png --output preview/frappe.png",
+    "generate-preview:latte": "slidev export test/latte.md --format png --output preview/latte.png",
+    "generate-preview:macchiato": "slidev export test/macchiato.md --format png --output preview/macchiato.png",
+    "generate-preview": "pnpm generate-preview:mocha && pnpm generate-preview:latte && pnpm generate-preview:frappe && pnpm generate-preview:macchiato"
   },
   "devDependencies": {
     "@catppuccin/palette": "^1.7.1",

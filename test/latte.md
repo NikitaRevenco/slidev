@@ -1,4 +1,5 @@
 ---
+theme: ../generated/slidev-theme-catppuccin-latte
 favicon: "https://catppuccin.com/favicon.png"
 ---
 
@@ -10,6 +11,6 @@ Include it in your project like this:
 
 ```md
 ---
-theme: catppuccin-mocha
+theme: catppuccin-latte
 ---
 ```
