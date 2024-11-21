@@ -19,19 +19,19 @@
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/zarchinard/eclipse/main/assets/latte.webp"/>
+<img src="./preview/frappe.png/1.png"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/zarchinard/eclipse/main/assets/frappe.webp"/>
+<img src="./preview/frappe.png/1.png"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/zarchinard/eclipse/main/assets/macchiato.webp"/>
+<img src="./preview/macchiato.png/1.png"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/zarchinard/eclipse/main/assets/mocha.webp"/>
+<img src="./preview/mocha.png/1.png"/>
 </details>
 
 ## Usage
