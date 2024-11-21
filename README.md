@@ -19,7 +19,7 @@
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="./preview/frappe.webp"/>
+<img src="./preview/latte.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
