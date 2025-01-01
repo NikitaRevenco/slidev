@@ -70,19 +70,12 @@ theme: catppuccin-latte
 
 ## Building
 
-We use [whiskers](https://github.com/catppuccin/whiskers) to create the 4 packages for each theme.
+We use [whiskers](https://github.com/catppuccin/whiskers) and [justfile](https://just.systems/) to create the 4 packages for each theme.
 
-Run this command:
+In the root of the repo, run:
 
-```
-whiskers templates/gitignore.tera && \
-whiskers templates/package.json.tera && \
-whiskers templates/styles/code.css.tera && \
-whiskers templates/styles/index.ts.tera && \
-whiskers templates/styles/layout.css.tera && \
-whiskers templates/styles/common.css.tera && \
-whiskers templates/setup/windicss.ts.tera && \
-whiskers templates/setup/shiki.ts.tera
+```sh
+just build
 ```
 
 ## 💝 Thanks to
