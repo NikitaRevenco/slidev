@@ -1,4 +1,3 @@
-/* Catppuccin spec: https://spec.draculatheme.com/ */
 
 :root {
   /*
@@ -6,17 +5,17 @@
     can be overrided by uses `themeConfig` option
    */
 
-  --background: hsl(###base###);
-  --current-line: ###current-line###;
-  --foreground: hsl(###text###);
-  --comment: hsl(###overlay2###);
-  --cyan: hsl(###sky###);
-  --green: hsl(###green###);
-  --orange: hsl(###peach###);
-  --pink: hsl(###pink###);
-  --purple: hsl(###mauve###);
-  --red: hsl(###red###);
-  --yellow: hsl(###yellow###);
+  --background: hsl(232, 0.23404255509376526, 0.18431372940540314);
+  --current-line: hsl(230, 0.18796992301940918, 0.2607843279838562);
+  --foreground: hsl(227, 0.682539701461792, 0.8764705657958984);
+  --comment: hsl(228, 0.20000000298023224, 0.6470588445663452);
+  --cyan: hsl(189, 0.5942028760910034, 0.729411780834198);
+  --green: hsl(105, 48%, 72%);
+  --orange: hsl(21, 0.8550724387168884, 0.729411780834198);
+  --pink: hsl(316, 0.7368420958518982, 0.8509804010391235);
+  --purple: hsl(267, 0.8269230723381042, 0.7960784435272217);
+  --red: hsl(351, 0.739130437374115, 0.729411780834198);
+  --yellow: hsl(40, 0.6991150379180908, 0.7784313559532166);
 }
 
 /* #app increases the specificity of .dark selector from upstream layout styles  */
@@ -65,7 +64,7 @@
 
     /* Update background color of code. We made it darker so we don't get same color for slide bg & code bg. */
     .slidev-code.shiki {
-      background: hsl(###mantle###) !important;
+      background: hsl(233, 0.23076923191547394, 0.15294118225574493) !important;
     }
 
     :not(pre) > code {

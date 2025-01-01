@@ -1,18 +1,18 @@
 {
-  "private": true,
-  "scripts": {
-    "dev:mocha": "slidev --open test/mocha.md",
-    "dev:latte": "slidev --open test/latte.md",
-    "dev:frappe": "slidev --open test/frappe.md",
-    "dev:macchiato": "slidev --open test/macchiato.md",
-    "build": "deno run --allow-read --allow-write --allow-run build.ts"
-  },
-  "devDependencies": {
-    "@catppuccin/palette": "^1.7.1",
-    "@slidev/cli": "0.50.0-beta.7",
-    "deno": "^0.1.1",
-    "playwright": "1.47.0",
-    "playwright-chromium": "^1.47.0",
-    "playwright-core": "1.47.0"
-  }
+	"private": true,
+	"scripts": {
+		"dev:mocha": "slidev --open test/mocha.md",
+		"dev:latte": "slidev --open test/latte.md",
+		"dev:frappe": "slidev --open test/frappe.md",
+		"dev:macchiato": "slidev --open test/macchiato.md",
+		"build": "deno run --allow-read --allow-write --allow-run build.ts"
+	},
+	"devDependencies": {
+		"@catppuccin/palette": "^1.7.1",
+		"@slidev/cli": "0.50.0-beta.7",
+		"deno": "^0.1.1",
+		"playwright": "1.47.0",
+		"playwright-chromium": "^1.47.0",
+		"playwright-core": "1.47.0"
+	}
 }

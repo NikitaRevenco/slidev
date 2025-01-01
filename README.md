@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-	<img src="./assets/combined.webp"/>
+	<img src="./assets/preview.webp"/>
 </p>
 
 ## Previews
@@ -66,6 +66,23 @@ or
 ---
 theme: catppuccin-latte
 ---
+```
+
+## Building
+
+We use [whiskers](https://github.com/catppuccin/whiskers) to create the 4 packages for each theme.
+
+Run this command:
+
+```
+whiskers templates/gitignore.tera && \
+whiskers templates/package.json.tera && \
+whiskers templates/styles/code.css.tera && \
+whiskers templates/styles/index.ts.tera && \
+whiskers templates/styles/layout.css.tera && \
+whiskers templates/styles/common.css.tera && \
+whiskers templates/setup/windicss.ts.tera && \
+whiskers templates/setup/shiki.ts.tera
 ```
 
 ## 💝 Thanks to

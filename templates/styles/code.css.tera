@@ -1,0 +1,34 @@
+---
+whiskers:
+  version: 2.5.1
+  matrix:
+    - flavor
+  filename: "../../packages/slidev-theme-catppuccin-{{ flavor.identifier }}/styles/code.css"
+---
+@import "prism-theme-vars/base.css";
+@import "codemirror-theme-vars/base.css";
+@import "prism-theme-vars/to-codemirror.css";
+
+:root {
+	--prism-font-family: var(--slidev-code-font-family);
+}
+
+pre[class*="language-"] {
+	@apply p-2;
+}
+
+:not(pre) > code {
+	font-size: 0.9em;
+	background: var(--prism-background);
+	@apply font-light py-0.5 rounded;
+}
+
+:not(pre) > code:before,
+:not(pre) > code:after {
+	content: "`";
+	opacity: 0.5;
+}
+
+:not(pre) > code:before {
+	margin-right: -0.08em;
+}

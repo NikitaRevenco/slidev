@@ -1,0 +1,43 @@
+{
+	"name": "slidev-theme-catppuccin-latte",
+	"version": "0.1.0",
+	"description": "Catppuccin Latte, a soothing pastel theme for Slidev",
+	"author": "Catppuccin <https://github.com/catppuccin/catppuccin>",
+	"funding": "https://opencollective.com/catppuccin",
+	"homepage": "https://github.com/catppuccin/userstyles",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/catppuccin/slidev.git"
+	},
+	"bugs": {
+		"url": "https://github.com/catppuccin/slidev/issues"
+	},
+	"keywords": [
+		"slidev theme",
+		"slidev",
+		"catppuccin",
+		"catppuccin theme",
+		"theme"
+	],
+	"license": "MIT",
+	"engines": {
+		"node": ">=14.0.0",
+		"slidev": ">=0.19.3"
+	},
+	"dependencies": {
+		"codemirror-theme-vars": "^0.1.2",
+		"prism-theme-vars": "^0.2.5"
+	},
+	"devDependencies": {
+		"@slidev/types": "0.50.0-beta.7"
+	},
+	"//": "Learn more: https://sli.dev/themes/write-a-theme.html",
+	"slidev": {
+		"colorSchema": "light",
+		"highlighter": "shiki",
+		"defaults": {
+			"hightlighter": "shiki"
+		}
+	}
+}
+

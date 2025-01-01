@@ -1,0 +1,172 @@
+
+:root {
+  /*
+    default theme color
+    can be overrided by uses `themeConfig` option
+   */
+
+  --background: hsl(229, 0.18644067645072937, 0.23137255012989044);
+  --current-line: hsl(230, 0.15584415197372437, 0.3019607961177826);
+  --foreground: hsl(227, 0.7014925479888916, 0.8686274290084839);
+  --comment: hsl(228, 0.22285714745521545, 0.656862735748291);
+  --cyan: hsl(189, 0.47826087474823, 0.729411780834198);
+  --green: hsl(96, 44%, 68%);
+  --orange: hsl(20, 0.7908496856689453, 0.699999988079071);
+  --pink: hsl(316, 0.7317073345184326, 0.8392156958580017);
+  --purple: hsl(277, 0.5901639461517334, 0.7607843279838562);
+  --red: hsl(359, 0.6778523325920105, 0.7078431248664856);
+  --yellow: hsl(40, 0.6204379796981812, 0.7313725352287292);
+}
+
+/* #app increases the specificity of .dark selector from upstream layout styles  */
+#app {
+  #slide-content {
+    --at-apply: text-$foreground bg-$background !important;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      --at-apply: text-$purple;
+    }
+
+    strong {
+      --at-apply: text-$orange;
+    }
+
+    em {
+      --at-apply: text-$yellow;
+    }
+
+    a {
+      --at-apply: text-$cyan;
+    }
+
+    ul,
+    ol {
+      li::marker {
+        --at-apply: text-$cyan;
+      }
+    }
+
+    blockquote {
+      --at-apply: bg-transparent text-$yellow border-none;
+
+      /* "font-italic" isn't working */
+      font-style: italic;
+    }
+
+    kbd {
+      --at-apply: text-$green;
+    }
+
+    /* Update background color of code. We made it darker so we don't get same color for slide bg & code bg. */
+    .slidev-code.shiki {
+      background: hsl(231, 0.1881188154220581, 0.1980392187833786) !important;
+    }
+
+    :not(pre) > code {
+      --at-apply: bg-transparent text-$green;
+    }
+  }
+
+  /* Layout: Cover, Intro */
+  .slidev-layout.cover,
+  .slidev-layout.intro {
+    --at-apply: h-full grid;
+
+    h1 {
+      --at-apply: text-6xl leading-20 text-$purple;
+    }
+
+    h1 + p {
+      --at-apply: -mt-2 text-$comment mb-4;
+    }
+
+    p + h2,
+    ul + h2,
+    table + h2 {
+      --at-apply: mt-10;
+    }
+  }
+
+  /* Layout: Face */
+  .slidev-layout.fact {
+    --at-apply: text-center grid h-full;
+
+    h1 {
+      --at-apply: text-8xl font-700;
+    }
+
+    h1 + p {
+      --at-apply: font-700 text-2xl;
+    }
+  }
+
+  /* Layout: Statement */
+  .slidev-layout.statement {
+    --at-apply: text-center grid h-full;
+
+    h1 {
+      --at-apply: text-6xl font-700;
+    }
+  }
+
+  /* Layout: Section */
+  .slidev-layout.section {
+    h1 {
+      --at-apply: text-6xl font-500 leading-20;
+    }
+  }
+
+  /* Layout: Face */
+  .slidev-layout.fact {
+    --at-apply: text-center grid h-full;
+
+    h1 {
+      --at-apply: text-8xl font-700;
+    }
+
+    h1 + p {
+      --at-apply: font-700 text-2xl;
+    }
+  }
+
+  /* Layout: Quote */
+  .slidev-layout.quote {
+    --at-apply: grid h-full;
+
+    h1 + p {
+      --at-apply: mt-2;
+    }
+  }
+
+  /* Layout: Author */
+  .slidev-layout.author {
+    img {
+      --at-apply: rounded-full mx-auto;
+    }
+
+    h1 {
+      --at-apply: text-3xl font-600 mb-0 next-[p]-mt-2;
+    }
+
+    h1 + p {
+      --at-apply: max-w-40ch mx-auto;
+    }
+
+    footer {
+      --at-apply: pt-16 text-sm flex justify-center items-center;
+
+      a {
+        --at-apply: ms-2 me-6;
+      }
+
+      a:not(:hover) {
+        color: inherit !important;
+      }
+    }
+  }
+}
